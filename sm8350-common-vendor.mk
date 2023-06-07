@@ -795,10 +795,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8350-common/proprietary/vendor/etc/video_bokeh_data/SRIB_MattingLive_INT8_V002_sm8250_snpe1390.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/video_bokeh_data/SRIB_MattingLive_INT8_V002_sm8250_snpe1390.dlc \
     vendor/samsung/sm8350-common/proprietary/vendor/etc/video_bokeh_data/SRIB_VD_INT8_V001_sm8250_snpe1390.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/video_bokeh_data/SRIB_VD_INT8_V001_sm8250_snpe1390.dlc \
     vendor/samsung/sm8350-common/proprietary/vendor/etc/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/video_system_specs.json \
-    vendor/samsung/sm8350-common/proprietary/vendor/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
-    vendor/samsung/sm8350-common/proprietary/vendor/etc/vintf/manifest_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_lahaina.xml \
-    vendor/samsung/sm8350-common/proprietary/vendor/etc/vintf/manifest_shima.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_shima.xml \
-    vendor/samsung/sm8350-common/proprietary/vendor/etc/vintf/manifest_yupik.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_yupik.xml \
     vendor/samsung/sm8350-common/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/samsung/sm8350-common/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/samsung/sm8350-common/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
@@ -973,10 +969,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8350-common/proprietary/vendor/firmware/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b04 \
     vendor/samsung/sm8350-common/proprietary/vendor/firmware/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.elf \
     vendor/samsung/sm8350-common/proprietary/vendor/firmware/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.mdt \
-    vendor/samsung/sm8350-common/proprietary/vendor/firmware_mnt/image/a660_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/a660_zap.b00 \
-    vendor/samsung/sm8350-common/proprietary/vendor/firmware_mnt/image/a660_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/a660_zap.b01 \
-    vendor/samsung/sm8350-common/proprietary/vendor/firmware_mnt/image/a660_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/a660_zap.b02 \
-    vendor/samsung/sm8350-common/proprietary/vendor/firmware_mnt/image/a660_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/a660_zap.mdt \
     vendor/samsung/sm8350-common/proprietary/vendor/lib/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common-util.so \
     vendor/samsung/sm8350-common/proprietary/vendor/lib/android.hardware.audio.common@2.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@2.0-util.so \
     vendor/samsung/sm8350-common/proprietary/vendor/lib/android.hardware.audio.common@4.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@4.0-util.so \
