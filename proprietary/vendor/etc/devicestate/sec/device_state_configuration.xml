@@ -1,0 +1,92 @@
+<!--
+  ~ Copyright (C) 2021 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<device-state-config>
+  <!-- CLOSE configuration -->
+  <device-state>
+    <identifier>0</identifier>
+    <name>CLOSE</name>
+    <conditions>
+      <lid-switch>
+        <open>FALSE</open>
+      </lid-switch>
+      <sensor>
+        <type>com.samsung.sensor.folding_state</type>
+        <name>lid_angle_fusion  Wakeup</name>
+        <value>
+          <max-inclusive>0.9</max-inclusive>
+        </value>
+      </sensor>
+    </conditions>
+    <flags>
+      <flag>FLAG_APP_INACCESSIBLE</flag>
+    </flags>
+  </device-state>
+
+  <!-- TENT configuration -->
+  <device-state>
+    <identifier>1</identifier>
+    <name>TENT</name>
+    <conditions>
+      <lid-switch>
+        <open>TRUE</open>
+      </lid-switch>
+      <sensor>
+        <type>com.samsung.sensor.folding_state</type>
+        <name>lid_angle_fusion  Wakeup</name>
+        <value>
+          <min-inclusive>1</min-inclusive>
+          <max-inclusive>1.9</max-inclusive>
+        </value>
+      </sensor>
+    </conditions>
+    <flags>
+      <flag>FLAG_APP_INACCESSIBLE</flag>
+    </flags>
+  </device-state>
+
+  <!-- HALF_FOLD configuration -->
+  <device-state>
+    <identifier>2</identifier>
+    <name>HALF_FOLDED</name>
+    <conditions>
+      <sensor>
+        <type>com.samsung.sensor.folding_state</type>
+        <name>lid_angle_fusion  Wakeup</name>
+        <value>
+          <min-inclusive>2</min-inclusive>
+          <max-inclusive>2.9</max-inclusive>
+        </value>
+      </sensor>
+    </conditions>
+  </device-state>
+
+  <!-- OPEN configuration -->
+  <device-state>
+    <identifier>3</identifier>
+    <name>OPEN</name>
+    <conditions>
+      <sensor>
+        <type>com.samsung.sensor.folding_state</type>
+        <name>lid_angle_fusion  Wakeup</name>
+        <value>
+          <min-inclusive>3</min-inclusive>
+        </value>
+      </sensor>
+    </conditions>
+  </device-state>
+</device-state-config>
+

@@ -1,0 +1,48 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "soc_id": ["415"],
+  },
+  "lidangle_0_platform":{
+    "owner": "lidangle",
+    ".orient":{
+      "owner": "lidangle",
+      "x":{ "type": "str", "ver": "0",
+        "data": "+y"
+      },
+      "y":{ "type": "str", "ver": "0",
+        "data": "+x"
+      },
+      "z":{ "type": "str", "ver": "0",
+        "data": "-z"
+      }
+    },
+    ".lidangle":{
+      "owner": "lidangle",
+      ".config":{
+        "owner": "lidangle",
+        "k_acc":{ "type": "flt", "ver": "0",
+            "data": "0.1"
+        },
+        "k_lid":{ "type": "flt", "ver": "0",
+          "data": "0.08"
+        },
+       "upright_angle":{ "type": "flt", "ver": "0",
+          "data": "15.0"
+        },
+       "sah_var":{ "type": "flt", "ver": "0",
+          "data": "0.12"
+        },
+       "sah_mean":{ "type": "flt", "ver": "0",
+          "data": "0.35"
+        },
+       "orient":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+       "key_board_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

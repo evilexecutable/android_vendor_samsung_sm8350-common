@@ -1,0 +1,13 @@
+service argos-daemon /vendor/bin/argosd
+    class main
+    user system
+    group system radio
+    disabled
+
+on post-fs-data
+    chown system system /dev/network_throughput
+
+on property:sys.boot_completed=1 && property:ro.product.system.brand=samsung
+    start argos-daemon
+
+
