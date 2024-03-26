@@ -5,6 +5,32 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+	name: "libskeymaster4device",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libskeymaster4device.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "compatibility_matrix",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/compatibility_matrix.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	soc_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "android.hardware.atrace@1.0-service",
 	owner: "samsung",
@@ -335,6 +361,33 @@ prebuilt_etc_xml {
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_lahaina",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/manifest_lahaina.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_shima",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/manifest_shima.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_yupik",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/manifest_yupik.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
 	soc_specific: true,
 }
 

@@ -2614,7 +2614,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8350-common/proprietary/vendor/lib64/libshotsuggestion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshotsuggestion.so \
     vendor/samsung/sm8350-common/proprietary/vendor/lib64/libshotsuggestion_engines.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshotsuggestion_engines.so \
     vendor/samsung/sm8350-common/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
-    vendor/samsung/sm8350-common/proprietary/vendor/lib64/libskeymaster4device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskeymaster4device.so \
     vendor/samsung/sm8350-common/proprietary/vendor/lib64/libsmartfocus_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmartfocus_interface.so \
     vendor/samsung/sm8350-common/proprietary/vendor/lib64/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmemlog.so \
     vendor/samsung/sm8350-common/proprietary/vendor/lib64/libsnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnaace.so \
@@ -2943,6 +2942,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8350-common/proprietary/vendor/lib64/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libstagefright_foundation.so
 
 PRODUCT_PACKAGES += \
+    libskeymaster4device \
+    compatibility_matrix \
     android.hardware.atrace@1.0-service \
     android.hardware.cas@1.2-service-lazy \
     android.hardware.dumpstate@1.1-service-lazy \
@@ -2979,4 +2980,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.snap@1.0-manifest \
     vendor.samsung.hardware.vibrator-default \
     vendor.samsung.hardware.wifi.hostapd \
-    vendor.samsung.hardware.wifi@2.0-service
+    vendor.samsung.hardware.wifi@2.0-service \
+    manifest_lahaina \
+    manifest_shima \
+    manifest_yupik
